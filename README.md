@@ -6,22 +6,22 @@ Therefore, I decided to use SQL.
 
 ***Create a schema for this database***
 
-people table\
-    personId serial PRIMARY KEY,\
-    name VARCHAR(20) NOT NULL,\
-    age INT NOT NULL,\
-    householdsize INT NOT NULL,\
+people table <br />
+    personId serial PRIMARY KEY,<br />
+    name VARCHAR(20) NOT NULL,<br />
+    age INT NOT NULL,<br />
+    householdsize INT NOT NULL,<br />
 
 households table
-    householdId serial PRIMARY KEY,\
-    address VARCHAR(20) NOT NULL,\
-    owner INT NOT NULL,\
+    householdId serial PRIMARY KEY,<br />
+    address VARCHAR(20) NOT NULL,<br />
+    owner INT NOT NULL,<br />
 
-people_households table\
-    personId int NOT NULL,\
-    householdId int NOT NULL,\
-    FOREIGN KEY (personId) REFERENCES people(personId),\
-    FOREIGN KEY (householdId) REFERENCES households(householdId)\
+people_households table <br />
+    personId int NOT NULL, <br />
+    householdId int NOT NULL,<br />
+    FOREIGN KEY (personId) REFERENCES people(personId),<br />
+    FOREIGN KEY (householdId) REFERENCES households(householdId)<br />
 
 
 ***Consider the requests our API should be capable of handling***
