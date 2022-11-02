@@ -29,7 +29,7 @@ GET request
 
 ***List the routes you will need with their HTTP verb and path***
 
-GET https://localhost/households
+GET https://neighboursearch/households
 
 ```
 [
@@ -54,7 +54,7 @@ GET https://localhost/households
 -owner: owner of this household which is linked to personId
 
 
-GET https://localhost/people
+GET https://neighboursearch/people
 
 ```
 [
@@ -84,7 +84,7 @@ GET https://localhost/people
 -householdMembers: number of household members that this person belongs to
 
 
-GET https://localhost/households/{postcode}
+GET https://neighboursearch/households/{postcode}
 
 ```
 [
@@ -100,7 +100,7 @@ Parameters:
 postcode (required): zip or postal code of the household being looked up
 
 
-GET https://localhost/people/{name}
+GET https://neighboursearch/people/{name}
 
 ```
 [
@@ -117,7 +117,7 @@ GET https://localhost/people/{name}
 Parameters:
 name (required): name of the person being looked up
 
-GET https://localhost/people/?age={age}&householdmembers={size}
+GET https://neighboursearch/people/?age={age}&householdmembers={size}
 
 ```
 [
