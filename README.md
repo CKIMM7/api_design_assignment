@@ -157,20 +157,20 @@ requests
 Accepted Accept headers: application/json
 
 responses
--When the api call works, you will see
-Request Method: GET
-Status Code: 200
-Content-Type: application/json
+-When the api call works, you will see<br />
+Request Method: GET<br />
+Status Code: 200<br />
+Content-Type: application/json<br />
 
--when a page or route is not found.
-Request Method: GET
-Status Code: 404
-Content-Type: text/plain; charset=utf-8
+-when a page or route is not found.<br />
+Request Method: GET<br />
+Status Code: 404<br />
+Content-Type: text/plain; charset=utf-8<br />
 
--when the server is down
-Request Method: GET
-Status Code: 503 OK
-Content-Type: text/plain; charset=utf-8
+-when the server is down<br />
+Request Method: GET<br />
+Status Code: 503 OK<br />
+Content-Type: text/plain; charset=utf-8<br />
 
 
 
