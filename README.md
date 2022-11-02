@@ -2,30 +2,26 @@
 
 Data is already pre-defined and structured.
 It is not expected to have unknow changes.
-Therefore, I chose SQL
-
-Each person has a name, age and number of people in their household
-Each house has an address and an owner
-Each address has a postcode and street address
+Therefore, I decided to use SQL.
 
 ***Create a schema for this database***
 
-people table
-    personId serial PRIMARY KEY,
-    name VARCHAR(20) NOT NULL,
-    age INT NOT NULL,
-    householdsize INT NOT NULL,
+people table\
+    personId serial PRIMARY KEY,\
+    name VARCHAR(20) NOT NULL,\
+    age INT NOT NULL,\
+    householdsize INT NOT NULL,\
 
 households table
-    householdId serial PRIMARY KEY,
-    address VARCHAR(20) NOT NULL,
-    owner INT NOT NULL,
+    householdId serial PRIMARY KEY,\
+    address VARCHAR(20) NOT NULL,\
+    owner INT NOT NULL,\
 
-people_households table
-    personId int NOT NULL, 
-    householdId int NOT NULL,
-    FOREIGN KEY (personId) REFERENCES people(personId),
-    FOREIGN KEY (householdId) REFERENCES households(householdId)
+people_households table\
+    personId int NOT NULL,\
+    householdId int NOT NULL,\
+    FOREIGN KEY (personId) REFERENCES people(personId),\
+    FOREIGN KEY (householdId) REFERENCES households(householdId)\
 
 
 ***Consider the requests our API should be capable of handling***
